@@ -1,0 +1,206 @@
+@import "variables";
+
+// body {
+//      background-color: $greenish;
+// }
+.header {
+  color: white;
+  background-color: $blueish;
+
+  .desktopmeni {
+    display: none;
+    @media screen and(min-width:1024px) {
+      display: block;
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .btn {
+    color: white;
+    background-color: $greenish;
+    @media screen and (min-width: 768px) {
+      background-color: $blueish;
+      border: 1px solid white;
+    }
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  .plavi {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .bit {
+    padding-top: 5px;
+    font-weight: 600;
+  }
+  .meni {
+    padding-left: 20px;
+  }
+}
+.brka {
+  padding-top: 30px;
+  width: 100%;
+  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+}
+.zelena {
+  background-color: $greenish;
+}
+
+.title-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  .crtica {
+    width: 70px;
+    height: 0;
+    border: 2px solid white;
+    margin: 0 10px;
+  }
+}
+.tekst {
+  padding-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-weight: 900;
+    }
+  }
+}
+.zanimanja {
+  padding-top: 10px;
+}
+.bela {
+  background-color: white;
+  color: black;
+  h2 {
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .title-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    .crtica {
+      width: 70px;
+      height: 0;
+      border: 2px solid $blueish;
+      margin: 0 10px;
+    }
+  }
+  img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .podmornica {
+    margin-bottom: 40px;
+  }
+}
+.zelenadva {
+  background-color: $greenish;
+  h2 {
+    font-weight: 700;
+    font-size: xx-large;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  p {
+    padding-top: 20px;
+  }
+  button {
+    color: white;
+    background-color: $greenish;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .fa-info-circle {
+    padding-right: 5px;
+  }
+}
+
+.contact {
+  background-color: white;
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+  .inputi {
+    margin-top: 20px;
+  }
+  button {
+    color: white;
+    background-color: $greenish;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+.darkplava {
+  background-color: $blueish;
+  color: white;
+  text-align: center;
+  h2 {
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  i {
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    @media screen and (min-width: 768px) {
+      &.linkedic {
+        display: block;
+        margin: 10px auto;
+        width: 40px;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      &.linkedic {
+        display: inline;
+        margin-left: 5px;
+      }
+    }
+  }
+  .tekstic {
+    margin-bottom: 70px;
+  }
+  .copy {
+    border: none;
+    padding: 2px;
+    margin-left: 0;
+  }
+  span {
+    color: grey;
+    font-size: xx-small;
+  }
+  .fejsbuk {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
